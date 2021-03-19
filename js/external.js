@@ -44,25 +44,31 @@
 
 //A student can be enrolled in a class only if the class is not full and the class schedule does not conflict with her current schedule.
 
+//
+// var classFull = confirm("is the class full?");
+// console.log(classFull);
+//
+// var classConflict = confirm("Any class schedule conflicts?");
+// console.log(classConflict);
+//
+// var canRegister = !(classFull || classConflict);
+//
+// if (canRegister) {
+//  console.log("Awesome you can register");
+// } else {
+//  console.log("Sorry you are unable to attend at this time")
+// }
 
 
+//A product offer can be applied only if a person buys more than 2 items, and the offer has not expired. Premium members do not need to buy a specific amount of products.
 
+var premiumMember = confirm("Are you a premium member?");
+var regularCustomer = true;
+console.log(premiumMember);
 
+var itemsNumber = parseFloat(prompt("How many items did you purchase?"));
 
-var classFull = confirm("is the class full?");
-console.log(classFull);
-
-var classConflict = confirm("Any class schedule conflicts?");
-console.log(classConflict);
-
-var canRegister = !(classFull || classConflict);
-
-if (canRegister) {
- console.log("Awesome you can register");
-} else {
- console.log("Sorry you are unable to attend at this time")
-}
-
+alert("You qualify for a discount" + (premiumMember || itemsNumber >=2) && regularCustomer);
 
 
 
