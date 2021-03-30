@@ -35,15 +35,15 @@
      */
 
     // for (var i = 0; i < names.length; i++){
-    //     console.log(names);
+    //     console.log(names[i]);
     // }
 
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
-        names.forEach(function(element, index, array) {
-            console.log(names);
+        names.forEach(function(name) {
+            console.log(name);
     })
     /**
      * TODO:
@@ -60,22 +60,19 @@
      */
 
 
-function first () {
-        var numbers = [1, 2, 3, 4, 5]
-        return numbers [0]
+function first (arr) {
+        return arr [0]
     }
-    console.log(first());
+    console.log(first([1, 2, 3, 4, 5]));
 
-    function second () {
-        var numbers = [1, 2, 3, 4, 5]
-        return numbers [1]
+    function second (arr) {
+        return arr [1]
     }
-    console.log(second());
+    console.log(second([1, 2, 3, 4, 5]));
 
-    function last () {
-        var numbers = [1, 2, 3, 4, 5]
-        return numbers [4]
+    function last (arr) {
+        return arr [4]
     }
-    console.log(last());
+    console.log(last([1, 2, 3, 4, 5]));
 
 })();
