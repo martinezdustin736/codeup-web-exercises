@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us</title>
+</head>
+<body>
+<!--<form action="https://www.elformo.com/forms/15f7b2b1-e5b0-438f-9f27-2bd83d68359a" method="post" accept-charset="UTF-8">-->
+    <h1>Registration page</h1>
+    <form method="POST" action="https://request-inspector.glitch.me/">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text">
+        <br>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password">
+        <br>
+
+        <label for="body-text">Tell me about yourself</label><br>
+        <textarea id="body-text" name="bio" cols="30" rows="10"></textarea>
+        <br>
+
+        <h3>How did you hear about us?</h3>
+      <label for="billboard">billboard</label>
+        <input id="billboard" name="multi-choice" value="billboard" type="radio">
+        <label for="radio">radio advertisement</label>
+        <input id="radio" name="multi-choice" value="radio advertisement" type="radio">
+        <label for="internet">internet advertisement</label>
+        <input id="internet" name="multi-choice" value="internet advertisement" type="radio">
+        <label for="other">other</label>
+        <input id="other" name="multi-choice" value="other" type="radio">
+        <br>
+
+        <h3>
+            <label for="web-browser">What web browser are you using?</label>
+        </h3>
+        <select id="web-browser" name="web-browser">
+            <option value="IE">Internet Explorer</option>
+            <option value="Chrome">Google Chrome</option>
+            <option value="Safari">Safari</option>
+            <option value="Mozilla">Mozilla Firefox</option>
+        </select>
+        <br>
+
+        <button type="submit">submit</button>
+
+
+
+    </form>
+</body>
+</html>
