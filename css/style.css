@@ -1,3 +1,51 @@
-h1 {
-    color: purple;
+/*@font-face{*/
+/*    font-family: "Roboto" ;*/
+/*    src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap);*/
+/*    !*font-style: italic;*!*/
+/*}*/
+
+body {
+    font-family:Roboto, sans-serif;
+    background-color: #dddbc8;
+    background-image: url("../img/codey.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    ;
+}
+
+
+
+header>h1,p {
+    text-align: center;
+}
+
+h1, h2 {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: circle;
+}
+
+ol{
+    list-style: square;
+}
+
+table, td, tr {
+    padding: 10px;
+    font-size: 110%;
+}
+
+a:link {
+    color: darkblue;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover{
+    color: white;
 }
