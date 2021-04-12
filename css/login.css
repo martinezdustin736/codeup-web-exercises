@@ -79,6 +79,7 @@ fieldset {
     margin-top: .5em;
     margin-bottom: .5em;
     width: calc(100% - 4px);
+    border-width: 2px;
 }
 
 
