@@ -3,6 +3,7 @@
 }
 
 body{
+    font-family: "Work Sans", sans-serif;
 
 }
 nav {
@@ -34,4 +35,5 @@ ul {
     text-decoration: none;
     padding: .2em;
     font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
 }

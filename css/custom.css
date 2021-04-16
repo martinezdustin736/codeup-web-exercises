@@ -1,0 +1,33 @@
+.jumbotron{
+    background-image:url("../img/pizza.png");
+  background-size: cover;
+    text-align: center;
+}
+
+.welcome-text{
+    background: rgba(255, 255, 255, 0.6);
+    color: rgba(0,0,0,0.6);
+}
+
+.pizza-bg{
+    width: 100%;
+}
+
+.pizza-selections {
+    margin: 1em;
+    border: solid rgba(0, 0, 0, 0.1);
+    border-radius:.25em;
+
+}
+
+.pizza-toppings{
+    margin: 1em;
+}
+
+.size-footer{
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.btn-primary{
+  float: right;
+}
