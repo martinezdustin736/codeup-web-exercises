@@ -39,27 +39,27 @@
     <h1 class="welcome-text">Welcome to Pizza World!</h1>
 </div>
 
-<h2>
-    <ul class="nav nav-tabs" id="myTaB" role="tablist">
+<h2>Build your own pizza</h2>
+    <ul class="nav nav-tabs" id="nav-TaB" role="tablist">
 
         <li class="nav-item" role="presentation">
 
-            <a class="nav-link" id="size and crust" data-toggle="tab" href="#pizza-selections" role="tab" aria-controls="choose size and crust" aria-selected="true">Size and crust</a>
+            <a class="nav-link" id="crust-size" data-toggle="tab" href="#crust" role="tab" aria-controls="crust-size" aria-selected="true">Size and crust</a>
         </li>
         <li class="nav-item" role="presentation">
 
-            <a class="nav-link" id="cheese and sauce" data-toggle="tab" href="#cheese and sauce" role="tab" aria-controls="cheese and sauce" aria-selected="true">Cheese and Sauce</a>
+            <a class="nav-link" id="sauce-pizza" data-toggle="tab" href="#sauce-choice" role="tab" aria-controls="sauce" aria-selected="true">Cheese and Sauce</a>
         </li>
 
-        <li class="nav-item" role="presentation">
+<!--        <li class="nav-item" role="presentation">-->
 
-            <a class="nav-link" id="pizza-toppings" data-toggle="tab" href="#toppings" role="tab" aria-controls="toppings" aria-selected="true">Toppings</a>
-        </li>
+<!--            <a class="nav-link" id="pizza-toppings" data-toggle="tab" href="#toppings" role="tab" aria-controls="toppings" aria-selected="true">Toppings</a>-->
+<!--        </li>-->
     </ul>
-</h2>
+
 
 <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="pizza-selections" role="tabpanel" aria-labelledby="size and crust">
+    <div class="tab-pane fade show active" id="crust-choice" role="tabpanel" aria-labelledby="crust">
         <div class="card">
             <div class="card-header bg-primary">
                Choose Size and Crust
@@ -71,8 +71,12 @@
 
         <ul class="list-group list-group-flush" >
             <li  class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>
-            <li class="list-group-item"><input type="radio" name="crust"> Small(10")</li>
-            <li class="list-group-item"><input type="radio" name="crust"> Medium (12")</li>
+            <li class="list-group-item">
+                <input id="crust-sm" type="radio" name="crust"> Small(10")</li>
+            <label for="crust-sm"></label>
+            <li class="list-group-item">
+                <input id="crust-med" type="radio" name="crust"> Medium (12")</li>
+            <label for="crust-med"></label>
         </ul>
     </div>
     <div class="pizza-selections">
@@ -81,9 +85,14 @@
         </div>
         <ul class="list-group list-group-flush" >
             <li  class="list-group-item">This enough for optimum crispy to crunchy ratio.</li>
-            <li class="list-group-item"><input type="radio" name="crust"> Medium(12")</li>
+            <li class="list-group-item">
+                <input id="crust-med-thin" type="radio" name="crust"> Medium(12")</li>
+            <label for="crust-med-thin"></label>
+            <li class="list-group-item">
+                <input id="crust-large" type="radio" name="crust"> Large(14")</li>
+            <label for="crust-large"></label>
 
-            <li class="list-group-item"><input type="radio" name="crust"> Large (14")</li>
+<!--            <li class="list-group-item"><type="radio" name="crust"> Large (14")</li>-->
         </ul>
     </div>
     <div class="card-footer">
