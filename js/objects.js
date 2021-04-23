@@ -14,7 +14,10 @@
 
     var person = {
         firstName: "Dustin ",
-        lastName: "Martinez"
+        lastName: "Martinez",
+        sayHello: function() {
+            return "Hello from " + this.firstName + this.lastName + "!"
+        }
     }
     console.log(person.firstName);
     console.log(person.lastName);
@@ -29,9 +32,9 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
-    person.sayHello = function () {
-        return "Hello from " + this.firstName + this.lastName + "!"
-    }
+    // person.sayHello = function () {
+    //     return "Hello from " + this.firstName + this.lastName + "!"
+    // // }
     console.log((person.sayHello()))
 
 
