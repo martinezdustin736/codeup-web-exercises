@@ -4,18 +4,36 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="js/jquery-3.6.0.js"></script>
+
 </head>
 <body>
 
-<h1>Getting jQuery started</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa, illo libero quidem ratione rerum unde! Deleniti id laboriosam magni numquam.
-    Consectetur ex exercitationem harum molestias repellendus repudiandae sed sint!</p>
+<div id="container">
+    <h1 id="codeup">Getting jQuery started</h1>
+        <p class="codeup">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa, illo libero quidem ratione rerum unde! Deleniti id laboriosam magni numquam.
+            Consectetur ex exercitationem harum molestias repellendus repudiandae sed sint!</p>
+
+        <p class="codeup">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut cum cumque deleniti excepturi libero quo rem saepe soluta tenetur?
+        Aspernatur impedit iure mollitia non officia perspiciatis sed vel voluptatem!</p>
+
+        <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut cum cumque deleniti excepturi libero quo rem saepe soluta tenetur?
+        Aspernatur impedit iure mollitia non officia perspiciatis sed vel voluptatem!</p>
+</div>
+
+<ul class="dress-items">
+    <li id="shoes">Shoes</li>
+    <li id="pants">pants</li>
+    <li id="shirt">shirt</li>
+    <li id="belt">belt</li>
+</ul>
+
 
 
 <script>
     $(document).ready(function() {
-    alert( 'The DOM has finished loading!' );
-});
+      $(".codeup").css("border", "1px solid red");
+    });
 </script>
+
 </body>
 </html>
