@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="js/jquery-3.6.0.js"></script>
+    <title>JQuery intro</title>
+
 
 </head>
 <body>
@@ -18,6 +18,8 @@
 
         <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut cum cumque deleniti excepturi libero quo rem saepe soluta tenetur?
         Aspernatur impedit iure mollitia non officia perspiciatis sed vel voluptatem!</p>
+
+    <h1>just another h1</h1>
 </div>
 
 <ul class="dress-items">
@@ -27,11 +29,20 @@
     <li id="belt">belt</li>
 </ul>
 
-
+<script src="js/jquery-3.6.0.js"></script>
 
 <script>
     $(document).ready(function() {
-      $(".codeup").css("border", "1px solid red");
+        // alert("Your page has finished loading")
+        // $("li").css("font-size", "20px");
+
+        // $("h1, p, li").css("background-color", "yellow");
+
+        var theList = $("li").each(function(){
+            alert($(this).html());
+        })
+
+
     });
 </script>
 
