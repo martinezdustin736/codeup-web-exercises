@@ -33,14 +33,32 @@
 
 <script>
     $(document).ready(function() {
+        $('#codeup').click(function(){
+            $(this).css('background-color', 'yellow');
+        });
+
+        $('p').dblclick(function (){
+           $(this).css('font-size', '18px');
+        })
+
+        $('li').hover(function (){
+            $(this).css('color', 'red')
+        }, function (){
+            $(this).css('color', 'black')
+        });
+
+
+
+
+
         // alert("Your page has finished loading")
         // $("li").css("font-size", "20px");
 
-        var oneClothingItem = $("#pants").html();
-        alert(oneClothingItem);
+        // var oneClothingItem = $("#pants").html();
+        // alert(oneClothingItem);
 
 
-        $("h1, p, li").css("background-color", "yellow");
+        // $("h1, p, li").css("background-color", "yellow");
 
         // var theList = $("li").each(function(){
         //     alert($(this).html());
