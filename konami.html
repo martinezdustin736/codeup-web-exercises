@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1 style="text-align: center">Konami Code</h1>
+<audio id="mgs">
+    <source src="css/Metal%20Gear%20Solid%202%20-%20Konami%20Code.mp3" type="audio/mpeg">
+</audio>
+
+<script src="js/jquery-3.6.0.js"></script>
+<script>
+    "use strict";
+
+    // var cheatCode = ['up','up','down','down','left','right','left','right','b','a','enter'];
+    var keyToTheCheats ='3838404037393739666513';
+    var cheatInput = "";
+
+    $(document).keyup(function(event){
+        console.log(event.keyCode);
+        cheatInput += ("" + event.keyCode)
+        console.log(cheatInput)
+        if(cheatInput === keyToTheCheats){
+          alert("You have added 30 lives!");
+
+          $('h1').html("A strong man doesn't need to read the future. He makes his own. -Snake");
+
+          $("body").css({
+                "background" : "url(img/NEWS-MetalGear-1024x533.jpeg)",
+                "background-size" : 'cover',
+                "background-repeat" : 'no repeat',
+                'color' : 'red'
+          });
+
+            $('audio#mgs')[0].play()
+        }
+
+
+    });
+
+</script>
+</body>
+</html>
