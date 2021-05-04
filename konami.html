@@ -21,24 +21,26 @@
         console.log(event.keyCode);
         cheatInput += ("" + event.keyCode)
         console.log(cheatInput)
-        if(cheatInput === keyToTheCheats){
-          alert("You have added 30 lives!");
+        if(cheatInput === keyToTheCheats) {
+            alert("You have added 30 lives!");
 
-          $('h1').html("A strong man doesn't need to read the future. He makes his own. -Snake");
+            $('h1').html("A strong man doesn't need to read the future. He makes his own. -Snake");
 
-          $("body").css({
-                "background" : "url(img/NEWS-MetalGear-1024x533.jpeg)",
-                "background-size" : 'cover',
-                "background-repeat" : 'no repeat',
-                'color' : 'red'
+            $("body").css({
+                "background": "url(img/NEWS-MetalGear-1024x533.jpeg)",
+                "background-size": 'cover',
+                "background-repeat": 'no repeat',
+                'color': 'red'
 
-          });
+
+            });
 
             $('audio#mgs')[0].play()
         }
 
 
     });
+
 
 </script>
 </body>

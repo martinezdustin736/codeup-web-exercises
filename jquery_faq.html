@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>National Parks FAQs</title>
+    <style>.highlight {background-color: yellow;}</style>
+</head>
+<body>
+
+<a id="answer-btn" href="#">Hide answers or make Visible</a>
+
+<dl>
+    <dt>The Most visited Park in 2020 </dt>
+    <dd>Great Smoky Mountains National park with 12.1 million visits.</dd>
+    <br>
+
+    <dt>Are pets allowed? </dt>
+    <dd>Pets are allowed in designated and developed areas.</dd>
+    <br>
+
+    <dt>How many employees are in the National Park Service? </dt>
+    <dd>Permanent, temporary, and seasonal employees: Approximately 20,000
+    </dd>
+    <br>
+    <dt>How many areas are in the National Park System? </dt>
+    <dd>The system includes 423 areas covering more than 85 million acres in every state</dd>
+    <br>
+    <dt>What is the largest national park site?</dt>
+    <dd> Wrangell-St. Elias National Park and Preserve</dd>
+    <br>
+    <dt>What is the smallest national park site? </dt>
+    <dd>Thaddeus Kosciuszko National Memorial,</dd>
+    <br>
+    <dt>How many people visit the national parks? </dt>
+    <dd>Total recreation visitors to the national parks in 2019: 327,516,619</dd>
+    <br>
+    <dt>What is the National Park Service budget?</dt>
+    <dd>FY 2017 Enacted: $2.932 billion</dd>
+    <br>
+    <dt>How do I reserve a tour in a park?</dt>
+    <dd>Recreation.gov</dd>
+    <br>
+    <dt>What government agency oversees the National Park Service?</dt>
+    <dd>The National Park Service is a bureau of the Department of the Interior. Directly overseeing its operation is the department's Assistant Secretary for Fish, Wildlife and Parks.</dd>
+</dl>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+
+    $('dd').addClass("invisible");
+
+$("#answer-btn").click(function (){
+$('.invisible').toggle()
+});
+
+$("dt").click(function(){
+    $(this).addClass("highlight")
+});
+
+
+</script>
+
+</body>
+</html>
