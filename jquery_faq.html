@@ -3,7 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>National Parks FAQs</title>
-    <style>.highlight {background-color: yellow;}</style>
+    <style>
+        .highlight {background-color: yellow;}
+
+        div{
+            display: flex;
+            flex-direction: row;
+            height:auto;
+            width:auto;
+        }
+
+        .pic{
+            display: flex;
+            flex-direction: row;
+           justify-content: space-around;
+            float: left;
+            width: auto;
+            height: 100px;
+            border: 5px solid black;
+            margin: 1px;
+        }
+
+
+    </style>
 </head>
 <body>
 
@@ -45,6 +67,50 @@
 </dl>
 
 
+<button id="bg-color">List background color</button>
+
+<h3>Big Bend</h3>
+<ul>
+    <li class="bold">15th largest in the national park system</li>
+    <li>Elevation highest point is 7832 feet</li>
+    <li>1295 species of plants</li>
+    <li class="yellow">196 miles of river</li>
+</ul>
+
+<h3>Big Bend</h3>
+<ul>
+    <li class="bold">15th largest in the national park system</li>
+    <li>Elevation highest point is 7832 feet</li>
+    <li>1295 species of plants</li>
+    <li class="yellow">196 miles of river</li>
+</ul>
+
+<h3>Big Bend</h3>
+<ul>
+    <li class="bold">15th largest in the national park system</li>
+    <li>Elevation highest point is 7832 feet</li>
+    <li>1295 species of plants</li>
+    <li class="yellow">196 miles of river</li>
+</ul>
+
+
+<div class="container">
+
+    <div id="pic1" class="pic">
+        <img src="img/big-bend-sign.jpeg">
+    </div>
+    <div id="pic2" class="pic">
+        <img src="img/national-park.png">
+    </div>
+    <div id="pic3" class="pic">
+        <img src="img/parks-collage.jpeg">
+    </div>
+</div>
+
+
+
+
+
 <script src="js/jquery-3.6.0.min.js"></script>
 <script>
 
@@ -54,10 +120,36 @@ $("#answer-btn").click(function (){
 $('.invisible').toggle()
 });
 
+////////////////////////////////////////////////////
+
 $("dt").click(function(){
     $(this).addClass("highlight")
 });
 
+
+// $("#bg-color").click(function(){
+//     $('.yellow').css("background-color", 'yellow');
+// });
+
+    $("#bg-color").click(function(){
+        $('ul').each(function (){
+            $(this).children().last().css("background", "yellow")
+        })
+    });
+
+
+$('h3').click(function(){
+    $(this).next().css("font-weight", "bold");
+})
+
+    $('ul').click(function(){
+        $(this).children().first().css('color', 'blue');
+    })
+
+
+    // $("#pic1").css({
+    //     "border" : "1px solid black"
+    // })
 
 </script>
 
