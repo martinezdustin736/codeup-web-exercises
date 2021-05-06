@@ -3,155 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>National Parks FAQs</title>
-    <style>
-        .highlight {background-color: yellow;}
+    <link rel="stylesheet" href="css/jquery_faq.css">
 
-        div{
-            display: flex;
-            flex-direction: row;
-            height:auto;
-            width:auto;
-        }
-
-        .pic{
-            display: flex;
-            flex-direction: row;
-           justify-content: space-around;
-            float: left;
-            width: auto;
-            height: 100px;
-            border: 5px solid black;
-            margin: 1px;
-        }
-
-
-    </style>
 </head>
 <body>
+<div class="signup">
+    <h1>Would you like to sign up for our website?</h1>
+    <a class="signup" href="#"><span>Click here to hide this message</span></a>
+</div>
 
-<a id="answer-btn" href="#">Hide answers or make Visible</a>
+<h2>Don't forget to register for the site</h2>
+
+<br>
+
+
+<a id="answer-btn" href="#">Click here to show answers</a>
 
 <dl>
     <dt>The Most visited Park in 2020 </dt>
     <dd>Great Smoky Mountains National park with 12.1 million visits.</dd>
-    <br>
+
 
     <dt>Are pets allowed? </dt>
     <dd>Pets are allowed in designated and developed areas.</dd>
-    <br>
+
 
     <dt>How many employees are in the National Park Service? </dt>
     <dd>Permanent, temporary, and seasonal employees: Approximately 20,000
     </dd>
-    <br>
+
     <dt>How many areas are in the National Park System? </dt>
     <dd>The system includes 423 areas covering more than 85 million acres in every state</dd>
-    <br>
+
     <dt>What is the largest national park site?</dt>
     <dd> Wrangell-St. Elias National Park and Preserve</dd>
-    <br>
+
     <dt>What is the smallest national park site? </dt>
     <dd>Thaddeus Kosciuszko National Memorial,</dd>
-    <br>
+
     <dt>How many people visit the national parks? </dt>
     <dd>Total recreation visitors to the national parks in 2019: 327,516,619</dd>
-    <br>
+
     <dt>What is the National Park Service budget?</dt>
     <dd>FY 2017 Enacted: $2.932 billion</dd>
-    <br>
+
     <dt>How do I reserve a tour in a park?</dt>
     <dd>Recreation.gov</dd>
-    <br>
+
     <dt>What government agency oversees the National Park Service?</dt>
     <dd>The National Park Service is a bureau of the Department of the Interior. Directly overseeing its operation is the department's Assistant Secretary for Fish, Wildlife and Parks.</dd>
 </dl>
 
 
+<h3>Big Bend</h3>
+<ul class="bold-li">
+    <li class="bold">15th largest in the national park system</li>
+    <li>Elevation highest point is 7832 feet</li>
+    <li>1295 species of plants</li>
+    <li class="yellow">196 miles of river</li>
+</ul>
+
+<h3>Big Bend</h3>
+<ul class="bold-li">
+    <li class="bold">15th largest in the national park system</li>
+    <li>Elevation highest point is 7832 feet</li>
+    <li>1295 species of plants</li>
+    <li class="yellow">196 miles of river</li>
+</ul>
+
+<h3>Big Bend</h3>
+<ul class="bold-li">
+    <li class="bold">15th largest in the national park system</li>
+    <li>Elevation highest point is 7832 feet</li>
+    <li>1295 species of plants</li>
+    <li class="yellow">196 miles of river</li>
+</ul>
+<button class="bold">Bold all facts</button>
 <button id="bg-color">List background color</button>
 
-<h3>Big Bend</h3>
-<ul>
-    <li class="bold">15th largest in the national park system</li>
-    <li>Elevation highest point is 7832 feet</li>
-    <li>1295 species of plants</li>
-    <li class="yellow">196 miles of river</li>
-</ul>
-
-<h3>Big Bend</h3>
-<ul>
-    <li class="bold">15th largest in the national park system</li>
-    <li>Elevation highest point is 7832 feet</li>
-    <li>1295 species of plants</li>
-    <li class="yellow">196 miles of river</li>
-</ul>
-
-<h3>Big Bend</h3>
-<ul>
-    <li class="bold">15th largest in the national park system</li>
-    <li>Elevation highest point is 7832 feet</li>
-    <li>1295 species of plants</li>
-    <li class="yellow">196 miles of river</li>
-</ul>
-
-
-<div class="container">
-
-    <div id="pic1" class="pic">
-        <img src="img/big-bend-sign.jpeg">
-    </div>
-    <div id="pic2" class="pic">
-        <img src="img/national-park.png">
-    </div>
-    <div id="pic3" class="pic">
-        <img src="img/parks-collage.jpeg">
-    </div>
-</div>
-
-
-
-
-
 <script src="js/jquery-3.6.0.min.js"></script>
-<script>
-
-    $('dd').addClass("invisible");
-
-$("#answer-btn").click(function (){
-$('.invisible').toggle()
-});
-
-////////////////////////////////////////////////////
-
-$("dt").click(function(){
-    $(this).addClass("highlight")
-});
-
-
-// $("#bg-color").click(function(){
-//     $('.yellow').css("background-color", 'yellow');
-// });
-
-    $("#bg-color").click(function(){
-        $('ul').each(function (){
-            $(this).children().last().css("background", "yellow")
-        })
-    });
-
-
-$('h3').click(function(){
-    $(this).next().css("font-weight", "bold");
-})
-
-    $('ul').click(function(){
-        $(this).children().first().css('color', 'blue');
-    })
-
-
-    // $("#pic1").css({
-    //     "border" : "1px solid black"
-    // })
-
-</script>
-
+<script src="js/jquery_faq.js"></script>
 </body>
 </html>
