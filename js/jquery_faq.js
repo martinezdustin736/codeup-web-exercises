@@ -58,9 +58,14 @@ $('.signup').click(function(){
 })
 
 $("h3").click(function (){
-    $("ul").fadeIn(1000);
+    $(this).next().fadeIn(1000);
 })
 
 $(".bold").click(function (){
     $(".bold-li").css("font-weight", "bold");
 })
+
+
+
+
+
