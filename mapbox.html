@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mapbox</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+<h1></h1>
+<div id='map' style= 'width: 600px; height: 500px;'></div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/keys.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+
+<script>
+    mapboxgl.accessToken = MAPBOX_ACCESS_TOKEN;
+    var map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [-74.2179, 43.2994], // starting position [lng, lat]
+        zoom: 5 // starting zoom
+    });
+
+    var marker = new mapboxgl.Marker({
+        color: "red",
+        draggable: true
+    }).setLngLat([-74.0445, 40.6892])
+        .addTo(map);
+
+    var popup = new mapboxgl.Popup()
+        .setLngLat(marker.getLngLat())
+        .setHTML("<h3>Statue of Liberty</h3>")
+        .setMaxWidth("100px")
+        .addTo(map)
+
+    marker.setPopup(popup);
+
+    marker.on('dragend' ,function(){
+        $("h1").html(marker.getLngLat().toString())
+        marker.setPopup()
+    })
+
+</script>
+
+</body>
+</html>

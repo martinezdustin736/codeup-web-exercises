@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox Api</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+       popup{
+
+       }
+    </style>
+</head>
+<body>
+
+<h1>Welcome to Mapbox!</h1>
+<button id="zoom">Zoom in</button>
+<div id='map' style='width: 500px; height: 600px;'></div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/keys.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script>
+    mapboxgl.accessToken = MAPBOX_ACCESS_TOKEN;
+    var map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [-98.4936, 29.4241], // starting position [lng, lat]
+        zoom: 9 // starting zoom
+    });
+    //
+    // var marker = new mapboxgl.Marker({
+    //     color: "red",
+    //     draggable: true
+    // }).setLngLat([-98.4875, 29.4342])
+    //     .addTo(map);
+    //
+    //
+    //
+    // var popup = new mapboxgl.Popup()
+    //     .setLngLat(marker.getLngLat())
+    //     .setHTML("<h3>Guillermo's</h3>")
+    //     .setMaxWidth("100px")
+    //
+    //
+    // marker.setPopup(popup);
+
+
+
+
+
+    $("#zoom").click(function (){
+        map.setZoom(map.getZoom()+1)
+    })
+
+    // $(marker).click(function(){
+    //     popup.addTo(map);
+    // })
+    // marker.setPopup(popup);
+
+    var favMunchSpots = [{
+        name: "Guillermo's",
+        address: "618 McCullough Ave, San Antonio, TX 78215",
+        info:"Italian is my favorite food.",
+    },
+        {
+            name: "Chama Gaucha",
+            address: "18318 Sonterra Pl, San Antonio, TX 78258",
+            info:"I enjoy eating steak and having a variety of choices is amazing .",
+        },
+        {
+            name: "Radicke's Bluebonnet Grill",
+            address: "237 N WW White Rd, San Antonio, TX 78219",
+            info:"This place has some of the best chicken fried anything.",
+        }
+    ];
+
+favMunchSpots.forEach(function (spot){
+
+        geocode(spot.address, MAPBOX_ACCESS_TOKEN).then(function (position) {
+            console.log(position);
+            var popup = new mapboxgl.Popup()
+                .setHTML('<h3>' + spot.name + '</h3>' + '<p>' + spot.info + '</p>')
+                // .setHTML('<p>' + spot.info + '</p>')
+                .setMaxWidth("100px")
+
+            var marker = new mapboxgl.Marker()
+                .setLngLat(position)
+                .addTo(map)
+                .setPopup(popup);
+        });
+
+});
+
+
+</script>
+</body>
+</html>

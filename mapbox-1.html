@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox -1</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+<div id='map' style='width: 600px; height: 500px;'></div>
+
+<button id="zoom">Zoom in</button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/keys.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+<script>
+    mapboxgl.accessToken = MAPBOX_ACCESS_TOKEN;
+    var map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [-98.4683, 29.5312], // starting position [lng, lat]
+        zoom: 12 // starting zoom
+    });
+
+    setTimeout(function (){
+// using flyTo options
+        map.flyTo({
+            center: [-97.0403, 32.8998],
+            zoom: 9,
+            speed: 0.5
+        });
+    },10000)
+
+    $("#zoom").click(function (){
+    map.setZoom(map.getZoom()+1)
+    })
+</script>
+</body>
+</html>
+
+</body>
+</html>
