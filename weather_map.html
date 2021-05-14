@@ -238,7 +238,7 @@ function weatherCall (lng,lat){
 
 
 
-
+///// this is grabbing lat and lng coordinates to change when searching/////
 $("#button").click(function (e){
     e.preventDefault()
     geocode($('input').val(), MAPBOX_ACCESS_TOKEN).then(function(results) {
@@ -249,17 +249,7 @@ $("#button").click(function (e){
         marker.setLngLat([coords[0],coords[1]]);
 
     });
-});
-
-
-
-
-
-
-
-
-
-
+})
 
 </script>
 </body>
