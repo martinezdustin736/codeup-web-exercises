@@ -49,6 +49,77 @@ console.log(emails)
 
 
 let moreLanguages=users.filter(function(user){
-    return user.languages.length >= 3;
+    return user.languages.length>= 3;
 })
 console.log(moreLanguages)
+
+
+
+////////////////////REDUCE METHOD//////////////////////////////////
+
+
+// let totalYears = users.reduce(function(total,user){
+//     return total + user.yearsOfExperience
+// }, 0);
+// console.log(totalYears);
+
+
+//////es6 version//////
+let totalYears = users.reduce((total, user) => total + user.yearsOfExperience ,0);
+console.log(totalYears);
+////////////////////////////////////////////
+
+
+// let emailviareduce = users.reduce(function (accumulator, user){
+//     accumulator.push(user.email);
+//     return accumulator
+// }, []);
+//
+// console.log(emailviareduce)
+
+// let longestEmail = users.reduce(function (accumulator, user,index,usersArray){
+//     if(index === usersArray.length -1){
+//         accumulator.push(user.email);
+//         accumulator.sort(function(email1, email2){
+//             return email2.length - email1.length
+//         })
+//         return accumulator[0];
+//     } else{
+//         accumulator.push(user.email);
+//         return accumulator
+//     }
+//
+// }, []);
+//
+// console.log(longestEmail);
+
+
+/////////////es6///////
+const longestEmails = users.reduce((longest, current) =>
+    longest.email.length > current.email.length ? longest : current ).email;
+console.log(longestEmails)
+
+////////////////////////////////////////
+
+
+let names = users.reduce(function(accumulator,user){
+    accumulator.push(user.name);
+    return accumulator;
+
+}, []);
+console.log(names);
+
+
+let usersNames = users.reduce((accumulator, user, index, arr) => {
+    if (index === arr.length -1) {
+        accumulator += `${user.name}.`;
+    } else {
+        accumulator += `${user.name}, `;
+    }
+    return accumulator;
+},'Users names are: ');
+
+console.log(usersNames)
+
+
+
