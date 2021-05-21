@@ -27,6 +27,17 @@ for (var i = 1; i <= 9; i++) {
     console.log(i.toString().repeat(i));
 }
 
+function generatePyramid() {
+    let totalNumberofRows = 10;
+    let output = '';
+    for (var i = 1; i <= totalNumberofRows; i++) {
+        let j = i.toString()
+        output += j.repeat(i)
+        output += '\n'
+    }
+}
+        console.log(output);
+
 
 // for (var i = 1; i < 10; i++) {
 //     var number = i;
