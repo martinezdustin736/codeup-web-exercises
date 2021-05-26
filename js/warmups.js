@@ -57,4 +57,16 @@
 //
 // console.log(seven(7));
 
-const returnSeven = () => 7;
+// const returnSeven = () => 7;
+
+
+
+function multiBy5 (num){
+    if(num * 5){
+        return num * 5;
+    } else {
+        return 0;
+    }
+}
+
+console.log(multiBy5(3.5));
