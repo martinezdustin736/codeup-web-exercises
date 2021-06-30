@@ -1,5 +1,8 @@
 "use strict";
 
+for (let j = 0; j < 10; j++) {
+    console.log(j)
+}
 // function showMultiplicationTable (num) {
 //     num = 7;
 //     for (var i = 1; i <= 10; i++) {
@@ -36,7 +39,7 @@ function generatePyramid() {
         output += '\n'
     }
 }
-        console.log(output);
+        // console.log(output);
 
 
 // for (var i = 1; i < 10; i++) {
