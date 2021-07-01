@@ -10,10 +10,10 @@
  */
 
 function sayHello (name) {
-return "Hello " + name;
+    return name;
 }
 
-console.log(sayHello("Dustin"));
+console.log(sayHello("Dustin"))
 
 
 /**
