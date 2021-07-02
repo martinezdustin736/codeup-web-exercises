@@ -7,7 +7,7 @@
      * 'names'.
      */
 
-    var names = ["David", "Joseph", "Evan", "Irvin"];
+    var names = ["David", "Joseph", "Evan", "Irvin", "Dustin"];
 
     /**
      * TODO:
@@ -27,6 +27,7 @@
     console.log(names[1]);
     console.log(names[2]);
     console.log(names[3]);
+    console.log(names[4]);
 
     /**
      * TODO:
