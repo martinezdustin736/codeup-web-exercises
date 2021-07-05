@@ -45,4 +45,9 @@ var index = planets.indexOf("Earth")
     console.log("Sorting the planets array.");
     planets.sort();
     console.log(planets);
+
+
+    for (let i = 0; i < planets.length; i++){
+        console.log(planets[i]);
+    }
 })();
