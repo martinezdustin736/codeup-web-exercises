@@ -49,17 +49,14 @@ a:hover{
     color: white;
 }
 
-.img{
-display: flex;
+.img-section{
+    display: flex;
     align-content: space-evenly;
     flex-wrap: wrap;
-
-
 }
 
 img{
    margin-left: 50px;
     margin-bottom: 10px;
     width: 30%;
-
 }
