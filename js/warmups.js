@@ -83,3 +83,8 @@ function fizz (num){
 }
 
 fizz(50);
+
+function minus (num, num1){
+    return num - num1;
+}
+minus(10,5);
