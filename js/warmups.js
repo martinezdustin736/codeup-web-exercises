@@ -60,13 +60,26 @@
 // const returnSeven = () => 7;
 
 
-
-function multiBy5 (num){
-    if(num * 5){
-        return num * 5;
-    } else {
-        return 0;
+//
+// function multiBy5 (num){
+//     if(num * 5){
+//         return num * 5;
+//     } else {
+//         return 0;
+//     }
+// }
+//
+// console.log(multiBy5(3.5));
+function fizz (num){
+    for(let i = 1; i <=num; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        } else if (i % 5 === 0) {
+            console.log("Buzz")
+        }else if (i % 3 === 0){
+            console.log("Fizz")
+        }else console.log(i);
     }
 }
 
-console.log(multiBy5(3.5));
+fizz(50);
