@@ -88,3 +88,9 @@ function minus (num, num1){
     return num - num1;
 }
 minus(10,5);
+
+function multi (num, num1){
+    return num * num1;
+}
+
+console.log(multi(3, 20));
