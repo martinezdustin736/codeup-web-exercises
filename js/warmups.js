@@ -70,19 +70,19 @@
 // }
 //
 // console.log(multiBy5(3.5));
-function fizz (num){
-    for(let i = 1; i <=num; i++) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            console.log("FizzBuzz");
-        } else if (i % 5 === 0) {
-            console.log("Buzz")
-        }else if (i % 3 === 0){
-            console.log("Fizz")
-        }else console.log(i);
-    }
-}
-
-fizz(50);
+// function fizz (num){
+//     for(let i = 1; i <=num; i++) {
+//         if (i % 3 === 0 && i % 5 === 0) {
+//             console.log("FizzBuzz");
+//         } else if (i % 5 === 0) {
+//             console.log("Buzz")
+//         }else if (i % 3 === 0){
+//             console.log("Fizz")
+//         }else console.log(i);
+//     }
+// }
+//
+// fizz(50);
 
 function minus (num, num1){
     return num - num1;
@@ -94,3 +94,10 @@ function multi (num, num1){
 }
 
 console.log(multi(3, 20));
+
+
+function divi (num1, num2){
+    return num1 / num2;
+}
+
+console.log(divi(100,10));
