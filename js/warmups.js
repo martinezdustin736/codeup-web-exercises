@@ -101,3 +101,9 @@ function divi (num1, num2){
 }
 
 console.log(divi(100,10));
+
+function add (num1, num2){
+    return num1 + num2;
+}
+
+console.log(add(20,30));
