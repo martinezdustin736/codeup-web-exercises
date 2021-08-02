@@ -16,6 +16,9 @@ function sayHello (name) {
 console.log(sayHello("Dustin"))
 
 
+
+
+
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -67,6 +70,7 @@ function isTwo(num) {
 console.log(isTwo(1));
 console.log(isTwo(2));
 console.log(isTwo(3));
+console.log(isTwo(4));
 
 console.log(isTwo(random));
 
