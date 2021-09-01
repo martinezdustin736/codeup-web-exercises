@@ -114,3 +114,9 @@ for(let i = 1; i < nums.length; i++) {
     console.log(i);
 }
 }
+
+function car (name){
+     return name = 'Tacoma';
+}
+
+console.log(car);
