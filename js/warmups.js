@@ -107,3 +107,10 @@ function add (num1, num2){
 }
 
 console.log(add(20,30));
+
+
+function loop (nums){
+for(let i = 1; i < nums.length; i++) {
+    console.log(i);
+}
+}
