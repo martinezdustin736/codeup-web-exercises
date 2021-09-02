@@ -119,4 +119,4 @@ function car (name){
      return name = 'Tacoma';
 }
 
-console.log(car);
+console.log(name);
