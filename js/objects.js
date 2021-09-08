@@ -19,6 +19,20 @@
             return "Hello from " + this.firstName + this.lastName + "!"
         }
     }
+
+    var truck = {
+
+        year: 2015,
+        make: "Toyota",
+        model: "Tundra",
+        drive: function(){
+            return "VROOOOOOM VROOOOOM"
+        }
+    }
+
+    console.log(truck.year);
+    console.log(truck.model);
+    console.log(truck.drive());
     console.log(person.firstName);
     console.log(person.lastName);
 
