@@ -96,11 +96,11 @@ function multi (num, num1){
 console.log(multi(3, 20));
 
 
-function divi (num1, num2){
+function divide (num1, num2){
     return num1 / num2;
 }
 
-console.log(divi(100,10));
+console.log(divide(100,10));
 
 function add (num1, num2){
     return num1 + num2;
@@ -120,3 +120,22 @@ function car (name){
 }
 
 console.log(name);
+
+
+// fizzBuzz
+
+function fizz (nums){
+    for (let i = 1; i < nums; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("fizzBuzz");
+        } else if (i % 3 === 0) {
+            console.log("fizz");
+        } else if (i % 5 === 0) {
+            console.log("buzz");
+        } else console.log(i);
+
+    }
+
+}
+
+console.log(fizz(50));
