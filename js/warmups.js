@@ -138,4 +138,4 @@ function fizz (nums){
 
 }
 
-console.log(fizz(50));
+console.log(fizz(100));
