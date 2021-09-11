@@ -124,18 +124,27 @@ console.log(name);
 
 // fizzBuzz
 
-function fizz (nums){
-    for (let i = 1; i < nums; i++) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            console.log("fizzBuzz");
-        } else if (i % 3 === 0) {
-            console.log("fizz");
-        } else if (i % 5 === 0) {
-            console.log("buzz");
-        } else console.log(i);
+// function fizz (nums){
+//     for (let i = 1; i < nums; i++) {
+//         if (i % 3 === 0 && i % 5 === 0) {
+//             console.log("fizzBuzz");
+//         } else if (i % 3 === 0) {
+//             console.log("fizz");
+//         } else if (i % 5 === 0) {
+//             console.log("buzz");
+//         } else console.log(i);
+//
+//     }
+//
+// }
 
-    }
+// console.log(fizz(100));
+
+const palindrome = str => {
+    str = str.toLowerCase()
+
+    console.log(str === str.split('').reverse().join(''))
 
 }
 
-console.log(fizz(100));
+palindrome('kayak');
