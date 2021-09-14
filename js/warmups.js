@@ -140,11 +140,21 @@ console.log(name);
 
 // console.log(fizz(100));
 
+
+//more plindrome practice
 const palindrome = str => {
     str = str.toLowerCase()
+    console.log(str === str.split('').reverse().join(''))
+}
+palindrome('kayak');
+
+const palindrome = str => {
+    let checker = "";
+    str = str.toLowerCase()
+    checker = str;
+    console.log(checker);
+    checker=str.split('')
 
     console.log(str === str.split('').reverse().join(''))
-
 }
-
 palindrome('kayak');
