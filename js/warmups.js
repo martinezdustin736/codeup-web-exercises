@@ -142,11 +142,11 @@ console.log(name);
 
 
 //more plindrome practice
-const palindrome = str => {
-    str = str.toLowerCase()
-    console.log(str === str.split('').reverse().join(''))
-}
-palindrome('kayak');
+// const palindrome = str => {
+//     str = str.toLowerCase()
+//     console.log(str === str.split('').reverse().join(''))
+// }
+// palindrome('kayak');
 
 const palindrome = str => {
     let checker = "";
@@ -154,6 +154,10 @@ const palindrome = str => {
     checker = str;
     console.log(checker);
     checker=str.split('')
+    console.log(checker);
+    checker = checker.reverse();
+    console.log(checker);
+    checker = checker.join('');
 
     console.log(str === str.split('').reverse().join(''))
 }
