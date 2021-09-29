@@ -1,5 +1,5 @@
 
-
+//
 // function fizzy (num){
 //
 //     for(let i = 1; i <= num; i++ ){
@@ -84,42 +84,42 @@
 //
 // fizz(50);
 
-function minus (num, num1){
-    return num - num1;
-}
-minus(10,5);
-
-function multi (num, num1){
-    return num * num1;
-}
-
-console.log(multi(3, 20));
-
-
-function divide (num1, num2){
-    return num1 / num2;
-}
-
-console.log(divide(100,10));
-
-function add (num1, num2){
-    return num1 + num2;
-}
-
-console.log(add(20,30));
-
-
-function loop (nums){
-for(let i = 1; i < nums.length; i++) {
-    console.log(i);
-}
-}
-
-function car (name){
-     return name = 'Tacoma';
-}
-
-console.log(name);
+// function minus (num, num1){
+//     return num - num1;
+// }
+// minus(10,5);
+//
+// function multi (num, num1){
+//     return num * num1;
+// }
+//
+// console.log(multi(3, 20));
+//
+//
+// function divide (num1, num2){
+//     return num1 / num2;
+// }
+//
+// console.log(divide(100,10));
+//
+// function add (num1, num2){
+//     return num1 + num2;
+// }
+//
+// console.log(add(20,30));
+//
+//
+// function loop (nums){
+// for(let i = 1; i < nums.length; i++) {
+//     console.log(i);
+// }
+// }
+//
+// function car (name){
+//      return name = 'Tacoma';
+// }
+//
+// console.log(name);
 
 
 // fizzBuzz
@@ -140,25 +140,94 @@ console.log(name);
 
 // console.log(fizz(100));
 
-
-//more plindrome practice
+//
+// more plindrome practice
 // const palindrome = str => {
 //     str = str.toLowerCase()
 //     console.log(str === str.split('').reverse().join(''))
 // }
 // palindrome('kayak');
+//
+// const palindrome = str => {
+//     let checker = "";
+//     str = str.toLowerCase()
+//     checker = str;
+//     console.log(checker);
+//     checker=str.split('')
+//     console.log(checker);
+//     checker = checker.reverse();
+//     console.log(checker);
+//     checker = checker.join('');
+//
+//     console.log(str === str.split('').reverse().join(''))
+// }
+// palindrome('kayak');
 
-const palindrome = str => {
-    let checker = "";
-    str = str.toLowerCase()
-    checker = str;
-    console.log(checker);
-    checker=str.split('')
-    console.log(checker);
-    checker = checker.reverse();
-    console.log(checker);
-    checker = checker.join('');
 
-    console.log(str === str.split('').reverse().join(''))
-}
-palindrome('kayak');
+// var info = {"name": "Charles", "age": "20","city":"San Diego", "state": "CA"};
+// console.log(info.city);
+
+//
+// vowels = ['a','e','i','o','u']
+// bucket= [];
+//
+// function remove (ltrs){
+//     let split = ltrs.split('')
+//     for (let i = 0; i < ltrs.length; i++) {
+//         console.log(split);
+//         for (let j = 0; j < vowels.length; j++){
+//             console.log(vowels)
+//             if (split[i] !== vowels[j]) {
+//                 bucket.push(split[i]);
+//                 console.log(bucket)
+//             }
+//             return bucket.join('');
+//
+//         }
+//
+//
+//     }
+// }
+// console.log(remove("Hello how are you"));
+//
+// function remove(str) {
+//     var vowels = ['a', 'e', 'i', 'o', 'u'];
+//
+//     return str.split('').filter(function(el) {
+//         return vowels.indexOf(el.toLowerCase()) == -1;
+//     }).join('');
+// }
+//
+// console.log(remove("hello have a great day"));
+
+//
+// function removeVowels(str) {
+//     let splitStr = str.split('');
+//     let noVowels = [];
+//     for(let i = 0; i < str.length; i++){
+//         if(splitStr[i].toLowerCase() != 'a' && splitStr[i].toLowerCase() != 'e' && splitStr[i].toLowerCase() != 'i' && splitStr[i].toLowerCase() != 'o' && splitStr[i].toLowerCase() != 'u') {
+//             noVowels.push(splitStr[i]);
+//         }
+//     }
+//     return noVowels.join('');
+// }
+//
+// console.log(removeVowels("Hello how are you"));
+
+//
+// function removeVow (str) {
+//     let strSplit = str.split('');
+//     let vowels = [];
+//     for (let i = 0; i < str.length; i++){
+//         if(strSplit[i] !== 'a' && strSplit[i] !== 'e' && strSplit[i] !== 'i'&& strSplit[i] !== 'o'&& strSplit[i] !== 'u') {
+//             vowels.push(strSplit[i])
+//         }
+//     }
+//     return vowels.join('');
+// }
+//
+// console.log(removeVow("Hi my name is Dustin"));
+
+
+
+
